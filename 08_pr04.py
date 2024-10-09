@@ -1,7 +1,9 @@
-myList = [1, 2, 4, 5]
-sum = 0
-sum += myList[0]
-sum += myList[1]
-sum += myList[2]
-sum += myList[3]
-print("The value of sum is", sum)
+# Sum(8) = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+# Sum(n) = Sum(n-1) + n 
+def sum(n):
+    if(n == 1):
+        return 1
+    return sum(n-1) + n 
+
+a = sum(5)
+print(a)
