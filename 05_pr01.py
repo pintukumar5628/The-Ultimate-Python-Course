@@ -1,5 +1,10 @@
-with open("poems.txt", "r") as f:
-    if('twinkle' in f.read()):
-        print("Yes twinkle is present")
-    else:
-        print("The word twinkle is not present")
+class Programmer:
+    def __init__(self, name, language):
+        self.name = name
+        self.language = language
+
+harry = Programmer("Harry", "Python")
+rohan = Programmer("Rohan", "Java")
+
+print(rohan.name)
+print(harry.name)

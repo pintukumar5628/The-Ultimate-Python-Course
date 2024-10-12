@@ -1,17 +1,20 @@
-import random 
 
-def game():
-    score  =  random.randint(1, 100)
-    print(f"The score is {score}")
-    return score
+import math
+class Calculator:
+    def __init__(self, number):
+        self.number = number
 
-score = game()
-with open("hiscore.txt", "r") as f: 
-    hiscore = int(f.read())
+    def square(self):
+        return self.number * self.number
 
-if hiscore<score:
-    with open("hiscore.txt", "w") as f: 
-        f.write(str(score))
+    def squareRoot(self):
+        return math.sqrt(self.number)
 
+    def cube(self):
+        return self.number * self.number * self.number
 
-
+two = Calculator(2)
+print(two.number)
+print(two.square())
+print(two.cube())
+print(two.squareRoot())

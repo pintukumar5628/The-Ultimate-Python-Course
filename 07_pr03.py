@@ -1,6 +1,8 @@
-for i in range(2, 21):
-    table = ''
-    for j in range(1, 11):
-        table += f"{i} X {j} = {i*j}\n"
-    with open(f'tables/{i}.txt', 'w') as f:
-        f.write(table)
+class MyClass:
+    a = 9
+
+obj = MyClass()
+print(obj.a)
+obj.a = 0 # I am setting an instance attribute by doing this!
+print(obj.a)
+print(MyClass.a)
