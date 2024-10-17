@@ -139,8 +139,12 @@ Global keyword and enumerate function
 List comprehensions
 
 
-##Chapter 13: Advanced Python 2
+## Chapter 13: Advanced Python 2
+
 Virtual environments
+
 Lambda functions
+
 String methods: join and format
+
 Functional programming: map, filter, and reduce
