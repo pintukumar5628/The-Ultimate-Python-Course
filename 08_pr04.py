@@ -1,7 +1,7 @@
-with open('file.txt', 'r') as f:
-    text = f.read()
+def is_divisible(n):
+    if n%5 ==0:
+        return True 
+    return False
 
-text = text.replace('donkey', "######")
-
-with open('file.txt', 'w') as f:
-    f.write(text)
+a = [1,2,3,4,5,60,7,8,9,10]
+print(list(filter(is_divisible, a)))

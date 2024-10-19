@@ -1,8 +1,6 @@
-class MyClass:
-    a = 9
+a = [i*7 for i in range(1, 11)]
+st = ""
+for item in a:
+    st += str(item) + '\n'
 
-obj = MyClass()
-print(obj.a)
-obj.a = 0 # I am setting an instance attribute by doing this!
-print(obj.a)
-print(MyClass.a)
+print(st)

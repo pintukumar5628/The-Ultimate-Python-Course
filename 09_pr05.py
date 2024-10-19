@@ -1,5 +1,10 @@
-def printPattern(n):
-    for i in range(n): 
-        print("*"*(n-i)) 
+from functools import reduce
 
-printPattern(3) 
+def max(m, n):
+    if m>n:
+        return m
+    return n
+
+a = [1111,2,3,54,675,54,34]
+maxNum = reduce(max, a)
+print(maxNum)
